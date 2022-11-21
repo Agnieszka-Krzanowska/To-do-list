@@ -10,21 +10,26 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <title>To-do list</title>
 </head>
 
 <body class="body">
     <h1>Lista zadań</h1>
-    <form class="js-form">
+    <form class="form js-form">
         <p>
             <label> Dodaj nowe zadanie</label>
         </p>
         <p>
-            <input class="js-newTask" placeholder="Co jest do zrobienia?"> <button>Dodaj zadanie</button>
+            <input class="form__input js-newTask" placeholder="Co jest do zrobienia?"> <button>Dodaj zadanie</button>
         </p>
     </form>
-    <ul class="js-tasks"></ul>
+    <div class="container">
+        <p>Lista zadań</p>
+        <ul class="js-tasks"></ul>
+    </div>
 </body>
 
 </html>
