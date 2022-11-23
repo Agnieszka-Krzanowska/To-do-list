@@ -13,3 +13,7 @@ html {
     margin: 0 auto;
     background-color: rgb(224, 224, 224);
 }
+
+.header {
+    margin-left: 20px;
+}
