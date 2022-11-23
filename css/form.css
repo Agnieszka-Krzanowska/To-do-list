@@ -7,6 +7,13 @@
     margin: 2px 20px;
 }
 
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+  
+}
+
 .form__input {
     border: 1.5px solid rgb(224, 224, 224);
     padding: 10px;
