@@ -5,6 +5,7 @@
     grid-template-columns: 1fr auto;
     grid-gap: 15px;
     margin: 2px 20px;
+    box-shadow: 0px 0px 5px 0px #C4C4C4;
 }
 
 @media (max-width: 767px) {
