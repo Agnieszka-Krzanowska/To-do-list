@@ -64,10 +64,13 @@
         event.preventDefault();
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskElement = document.querySelector(".js-newTask");
 
-        if (newTaskContent === "") {
-            return;
-        }
+        if (newTaskContent !== "") {
+            newTaskElement.value = "";
+        };
+
+        newTaskElement.focus();
 
         addNewTask(newTaskContent);
     };
