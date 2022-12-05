@@ -67,12 +67,11 @@
         const newTaskElement = document.querySelector(".js-newTask");
 
         if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
             newTaskElement.value = "";
         };
 
         newTaskElement.focus();
-
-        addNewTask(newTaskContent);
     };
 
     const init = () => {
