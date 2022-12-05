@@ -18,7 +18,6 @@
 .form__input {
     border: 1.5px solid rgb(224, 224, 224);
     padding: 10px;
-    word-break: break-word;
 }
 
 .form__button {
