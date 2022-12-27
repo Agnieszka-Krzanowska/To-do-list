@@ -12,7 +12,7 @@
     .form {
         grid-template-columns: 1fr;
     }
-  
+
 }
 
 .form__input {
@@ -29,4 +29,10 @@
 
 .form__button:active {
     border: 2px solid black;
+}
+
+.form__button:hover {
+    transition: 0.8s;
+    transform: scale(1.2);
+    background-color: hsl(180, 100%, 30%);
 }
