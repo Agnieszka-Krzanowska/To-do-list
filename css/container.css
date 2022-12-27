@@ -28,7 +28,7 @@
 }
 
 .button__done {
-    background-color: green;
+    background-color: hsl(120, 100%, 25%);
     border: none;
     color: white;
     width: 30px;
@@ -40,13 +40,23 @@
     border: 1px solid black;
 }
 
+.button__done:hover {
+    transition: 0.8s;
+    background-color: hsl(120, 100%, 35%);
+}
+
 .button__remove {
-    background-color: crimson;
+    background-color: hsl(348, 83%, 47%);
     color: white;
     border: none;
     width: 30px;
     height: 30px;
     margin-left: 10px;
+}
+
+.button__remove:hover {
+    transition: 0.8s;
+    background-color: hsl(348, 83%, 60%);
 }
 
 .button__remove:active {
