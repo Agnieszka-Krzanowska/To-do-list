@@ -1,6 +1,5 @@
 {
-    let tasks = [
-    ];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -69,11 +68,12 @@
 
     const renderButtons = () => {
         let htmlButtons = ""
+        const buttons = document.querySelector(".js-buttons")
 
         if (tasks.length === 0) {
 
-            document.querySelector(".js-buttons").innerHTML = "";
-            
+            buttons.innerHTML = "";
+
         } else {
 
             htmlButtons += `
@@ -81,7 +81,23 @@
                 <button class="button__CompleteAll">Ukończ wszystkie</button>
         `;
         };
-        document.querySelector(".js-buttons").innerHTML = htmlButtons;
+        buttons.innerHTML = htmlButtons;
+    };
+
+    const completeAll = () => {
+        tasks = tasks.map((task) => (
+            { ...task, done: true }
+        ));
+        render();
+    };
+
+
+    const bindButtonsEvents = () => {
+        const button__CompleteAll = document.querySelector(".button__CompleteAll");
+
+        if (button__CompleteAll) {
+            button__CompleteAll.addEventListener("click", completeAll);
+        }
     };
 
 
@@ -91,6 +107,7 @@
 
         bindRemoveEvents();
         bindToggleDoneEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
