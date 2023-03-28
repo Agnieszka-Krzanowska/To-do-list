@@ -78,7 +78,7 @@
         } else {
 
             htmlButtons += `
-                <button class="button__HideDone">Ukryj ukończone</button>
+                <button class="button__HideDone">${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
                 <button class="button__CompleteAll">Ukończ wszystkie</button>
         `;
         };
