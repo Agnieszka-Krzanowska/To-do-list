@@ -79,7 +79,7 @@
 
             htmlButtons += `
                 <button class="button__HideDone">${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
-                <button class="button__CompleteAll">Ukończ wszystkie</button>
+                <button class="button__CompleteAll"${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie</button>
         `;
         };
         buttons.innerHTML = htmlButtons;
