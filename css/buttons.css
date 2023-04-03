@@ -34,7 +34,7 @@
     border: 1px solid black;
 }
 
-.button__HideDone {
+.buttons__button {
     color: teal;
     background-color: transparent;
     border: none;
@@ -42,21 +42,14 @@
 
 }
 
-.button__HideDone:hover {
+.buttons__button:hover {
     transition: 0.8s;
     color: hsl(180, 100%, 30%);
     ;
 }
 
-.button__CompleteAll {
-    color: teal;
-    background-color: transparent;
-    border: none;
-    font-size: large;
-}
 
-.button__CompleteAll:hover {
-    transition: 0.8s;
-    color: hsl(180, 100%, 30%);
-    ;
+.buttons__button:disabled {
+    color: rgb(182, 182, 182);
+    cursor: not-allowed;
 }
