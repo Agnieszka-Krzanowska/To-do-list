@@ -11,7 +11,8 @@ It's simple to-do list which has been created using the "YouCode" course.
 
 ### Here is a GIF showing how to properly use the website and its features
 
-![Animation2](https://user-images.githubusercontent.com/116174956/205136124-bcb2c518-de48-4f3e-9c7a-93e7673b3818.gif)
+![Animation2](https://user-images.githubusercontent.com/116174956/229593820-69c5e770-d07d-455a-a3b3-046f99b1aea7.gif)
+
 
 ### Used Technologies
 - HTML
