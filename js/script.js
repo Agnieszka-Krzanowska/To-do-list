@@ -78,8 +78,12 @@
         } else {
 
             htmlButtons += `
-                <button class="button__HideDone buttons__button">${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
-                <button class="button__CompleteAll buttons__button"${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie</button>
+                <button class="button__HideDone buttons__button">
+                  ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
+                </button>
+                <button class="button__completeAll buttons__button"
+                  ${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie
+                </button>
         `;
         };
         buttons.innerHTML = htmlButtons;
@@ -99,10 +103,10 @@
 
 
     const bindButtonsEvents = () => {
-        const button__CompleteAll = document.querySelector(".button__CompleteAll");
+        const button__completeAll = document.querySelector(".button__completeAll");
 
-        if (button__CompleteAll) {
-            button__CompleteAll.addEventListener("click", completeAll);
+        if (button__completeAll) {
+            button__completeAll.addEventListener("click", completeAll);
         }
 
         const button__HideDone = document.querySelector(".button__HideDone");
