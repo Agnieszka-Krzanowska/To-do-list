@@ -25,6 +25,7 @@
     color: white;
     padding: 10px;
     border: 1.5px solid teal;
+    transition: 0.8s;
 }
 
 .form__button:active {
@@ -32,7 +33,10 @@
 }
 
 .form__button:hover {
-    transition: 0.8s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: hsl(180, 100%, 30%);
+}
+.h2 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
