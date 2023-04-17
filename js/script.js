@@ -78,7 +78,7 @@
         } else {
 
             htmlButtons += `
-                <button class="button__HideDone buttons__button">
+                <button class="button__hideDone buttons__button">
                   ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
                 </button>
                 <button class="button__completeAll buttons__button"
@@ -109,10 +109,10 @@
             button__completeAll.addEventListener("click", completeAll);
         }
 
-        const button__HideDone = document.querySelector(".button__HideDone");
+        const button__hideDone = document.querySelector(".button__hideDone");
 
-        if (button__HideDone) {
-            button__HideDone.addEventListener("click", toggleHideDoneTasks);
+        if (button__hideDone) {
+            button__hideDone.addEventListener("click", toggleHideDoneTasks);
         }
     };
 
