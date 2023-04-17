@@ -34,12 +34,26 @@
     border: 1px solid black;
 }
 
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .buttons__button {
     color: teal;
     background-color: transparent;
     border: none;
     font-size: large;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
+@media (max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
 }
 
 .buttons__button:hover {

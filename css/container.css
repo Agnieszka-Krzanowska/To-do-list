@@ -4,8 +4,14 @@
     margin: 10px 20px 2px;
     box-shadow: 0px 0px 5px 0px #C4C4C4;
     display: grid;
-    grid-template-columns: 5fr 3fr;
-    align-items: center;
+    grid-template-columns: 5fr 6fr;
+    
+}
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .tasks {
