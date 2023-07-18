@@ -67,4 +67,5 @@
 .buttons__button:disabled {
     color: rgb(182, 182, 182);
     cursor: not-allowed;
+    border: none;
 }
